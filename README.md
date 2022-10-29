@@ -8,7 +8,7 @@ This repository contains data and database structure for clonal tracking in gene
 
 ## Exploring the repository
 
-The folder *"gtris_output/clonal_expansion"* contains the output files of gamma-TRIS for our validation assay, that is an experimental in vitro dataset of vector integration sites (IS), retrieved by the protocol Sonication Linker Merdiate PCR (described in Cesana et al, Nature Medicine 2021) and sequenced by Illumina paired-ends. We then run gamma-TRIS to identify the IS after trimming the vector sequences with VISPA2 (Spinozzi et al, BMC Bioinformaticvs 2017).
+The folder *"gtris_output/clonal_expansion"* contains the output files of gamma-TRIS for our validation assay, that is an experimental in vitro dataset of vector integration sites (IS), retrieved by the protocol Sonication Linker Merdiate PCR (described in Cesana et al, Nature Medicine 2021) and sequenced by Illumina paired-ends. We then run gamma-TRIS to identify the IS after trimming the vector sequences with VISPA2 (Spinozzi et al, BMC Bioinformatics 2017 [DOI 10.1186/s12859-017-1937-9](https://doi.org/10.1186/s12859-017-1937-9)).
 
 The folder *"import_data_graphdb"* contains the scripts for data import into the graph database. The database export is here stored in the folder *"graph_db_export"*.
 
