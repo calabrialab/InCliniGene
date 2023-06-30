@@ -17,3 +17,9 @@ The query output to build the tracking matrix is reported in the folder *"query_
 We compared the results of gamma-TRIS in terms of output tracking matrix with the output matrix exported from **InCliniGene** and we reported the results in the filder *"compare_dataset"*. Moreover, we compared the IS landing in a repetitive region between the quantification of gamma-TRIS and VISPA2 to demonstrate the reliability of gamma-TRIS and the importance of using its results in all clonal tracking analyses.
 
 Further details will be available in the publication, once released.
+
+## Tutorials and Demo
+
+We released a [tutorial page](TUTORIAL_explore.md) to guide all users through the database configuration, import and query.
+
+We also added a demo video ([external link via Zenodo](https://doi.org/10.5281/zenodo.8102448)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8102448.svg)](https://doi.org/10.5281/zenodo.8102448)
