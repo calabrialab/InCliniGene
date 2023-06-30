@@ -1,4 +1,4 @@
-# EXPLORE_tutorial
+# Tutorial: Configure the database and run a query
 
 ## Neo4j Docker download
 
