@@ -135,13 +135,13 @@ cypher-shell -u neo4j -p yourpassword
 Connected to Neo4j using Bolt protocol version 4.4 at neo4j://localhost:7687 as user neo4j.
 Type :help for a list of available commands or :exit to exit the shell.
 Note that Cypher queries must end with a semicolon.
-**neo4j@neo4j>**
+neo4j@neo4j>
 ```
 
 Once inside the cypher-shell, you can query Neo4j. The first command to run is to import the clonalexp.graphml database using a function from the APOC library.
 
 ```bash
-**neo4j@neo4j>** CALL apoc.import.graphml("clonalexp.graphml", {readLabels: true});
+neo4j@neo4j> CALL apoc.import.graphml("clonalexp.graphml", {readLabels: true});
 +-----------------------------------------------------------------------------------------------------------------------------------+
 | file                | source | format    | nodes  | relationships | properties | time  | rows | batchSize | batches | done | data |
 +-----------------------------------------------------------------------------------------------------------------------------------+
@@ -153,11 +153,11 @@ Once inside the cypher-shell, you can query Neo4j. The first command to run is t
 
 ## Query
 
-At this point you can run queries to query the database, the outputs will be printed directly below the query.
+At this point you can run queries against the database, the outputs will be printed directly below the query.
 Now, for example, let's try querying the database with query #02 from the query table used in the benchmarks.
 
 ```bash
-**neo4j@neo4j>** match (s:sample)--(u:subg)
+neo4j@neo4j> match (s:sample)--(u:subg)
              return s.DNAnumber, count(u);
 +---------------------------+
 | s.DNAnumber    | count(u) |
