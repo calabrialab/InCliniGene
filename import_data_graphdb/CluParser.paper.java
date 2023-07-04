@@ -582,13 +582,10 @@ public class CluParser {
                 System.out.println("Indicare il file da leggere! \n Uso: java CluParser filename [ID]");
                 System.exit(-1);
             } else file = Paths.get(args[0]);
-
-        //BASTION
-        driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic("neo4j", "123stella"));
-        //LOCAL
-        //driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic("neo4j", "neo4j123Stella"));
-
-
+        
+        //LOCAL ----- CHANGE HERE WITH YOUR UID AND PASSWORD (!!!!)
+        driver = GraphDatabase.driver("bolt://localhost:7687", AuthTokens.basic(/*UID*/, /*PWD*/));
+        
         if(args.length > 1) ID = args[1];
         else if (file.getFileName().toString().contains("unique_r1_ID")) {
             System.out.println("Il nome del file continene un ID: "); //E me lo cerco del posto opportuno
