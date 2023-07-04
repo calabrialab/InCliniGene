@@ -23,3 +23,5 @@ Further details will be available in the publication, once released.
 We released a [tutorial page](TUTORIAL_explore.md) to guide all users through the database configuration, import and query.
 
 We also added a demo video ([external link via Zenodo](https://doi.org/10.5281/zenodo.8102448)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8102448.svg)](https://doi.org/10.5281/zenodo.8102448)
+
+Additional examples are provided with sample datasets in [this tutorial](TUTORIAL_utils).
