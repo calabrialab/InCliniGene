@@ -24,4 +24,4 @@ We released a [tutorial page](TUTORIAL_explore.md) to guide all users through th
 
 We also added a demo video ([external link via Zenodo](https://doi.org/10.5281/zenodo.8102448)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8102448.svg)](https://doi.org/10.5281/zenodo.8102448)
 
-Additional examples are provided with sample datasets in [this tutorial](TUTORIAL_utils).
+Additional examples are provided with sample datasets in [this tutorial](TUTORIAL_utils.md).
