@@ -23,8 +23,8 @@ EXPECTED OUTPUT
 To convert a general-purpose sparse matrix to a Jason file format, to be later processed for data import, you need need to run the file converter _sparseMatrix2Jason.java_ with the following statements:
 
 ```
-javac sparseMatrix2Jason.java
-java sparseMatrix2Jason sample_sparse_ISMatrix.tsv
+javac SparseMatrix2Jason.java
+java SparseMatrix2Jason sample_sparse_ISMatrix.tsv
 ```
 
 The script will return a file (with extension _.clu_) for each column, indeed a file per sample.
