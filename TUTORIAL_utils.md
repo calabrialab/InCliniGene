@@ -7,8 +7,8 @@ All files here referred, both Java files and their sample data, are placed in th
 
 In order to process the data of a sparse matrix, you need to add and parse sample metadata through a file, formatted as tab-separated file format (TSV). An example of the file is provided here: [sample_metadata](utils/sample_metadata_file.tsv). 
 The required columns are:
-- "CompleteAmplificationID": the ID of the sample (corresponding to a column in the sparse matrix of IS.
-- "UniqueID": an extra ID for the sample (both columns can have the same name/ID).
+- "CompleteAmplificationID": the ID of each sample (corresponding to a column in the sparse matrix of IS.
+- "UniqueID": an extra ID for samples (both columns can have the same name/ID).
 
 To import the metadata file, you need to execute the following command line [MetadataParser.java](utils/MetadataParser.java) with the input file [sample_metadata](utils/sample_metadata_file.tsv):
 
