@@ -1,4 +1,4 @@
-### nuova FE Luca - 1 giugno 2021
+### AC v1 2021
 library(reshape2)
 library(ggplot2)
 library(gplots)
@@ -8,7 +8,6 @@ library(psych)
 ###############################################################
 ## functions
 ###############################################################
-# source("/Users/calabria.andrea/Dropbox (FONDAZIONE TELETHON)/TIGET/Workbench/isatk/script/R/isa_utils_functions.R")
 reannotate_Repeat_IS <- function(df, id_cols = c("Chr", "Pos", "Strand")) {
   # slice matrix with only repeats
   slice_R <- df[which(df[id_cols[1]] == "R" & df[id_cols[2]] == -1),]
