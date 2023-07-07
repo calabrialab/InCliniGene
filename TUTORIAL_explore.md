@@ -150,6 +150,29 @@ neo4j@neo4j> CALL apoc.import.graphml("clonalexp.graphml", {readLabels: true});
 
 1 row
 ```
+To speedup the execution of the queries, explained below, there is the need to creat three indexes with the following commands.
+It can takes some minutes depending on the characteristics of the hardware.
+
+```bash
+neo4j@neo4j> CREATE INDEX ON :pos(searchlabel);
+0 rows
+neo4j@neo4j> CREATE INDEX ON :subg(clu_id);
+0 rows
+neo4j@neo4j> CREATE INDEX on :sample(UniqueID);
+0 rows
+neo4j@neo4j> CALL db.indexes;
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| id | name             | state    | populationPercent | uniqueness  | type     | entityType     | labelsOrTypes | properties      | provider           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1  | "index_343aff4e" | "ONLINE" | 100.0             | "NONUNIQUE" | "LOOKUP" | "NODE"         | []            | []              | "token-lookup-1.0" |
+| 5  | "index_3bcc5920" | "ONLINE" | 100.0             | "NONUNIQUE" | "BTREE"  | "NODE"         | ["sample"]    | ["UniqueID"]    | "native-btree-1.0" |
+| 4  | "index_b88fc7d5" | "ONLINE" | 100.0             | "NONUNIQUE" | "BTREE"  | "NODE"         | ["subg"]      | ["clu_id"]      | "native-btree-1.0" |
+| 3  | "index_d90fd1eb" | "ONLINE" | 100.0             | "NONUNIQUE" | "BTREE"  | "NODE"         | ["pos"]       | ["searchlabel"] | "native-btree-1.0" |
+| 2  | "index_f7700477" | "ONLINE" | 100.0             | "NONUNIQUE" | "LOOKUP" | "RELATIONSHIP" | []            | []              | "token-lookup-1.0" |
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+5 rows
+```
 
 ## Query
 
