@@ -1,5 +1,5 @@
 # InCliniGene
-Graph Database solution for Clonal tracking with vector integration sites (Integrated Clinical Genomics DB)
+_Graph Database solution for Clonal tracking with vector integration sites (Integrated Clinical Genomics DB)_
 
 ## Introduction
 
@@ -25,3 +25,6 @@ We released a [tutorial page](TUTORIAL_explore.md) to guide all users through th
 We also added a demo video ([external link via Zenodo](https://doi.org/10.5281/zenodo.8102448)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8102448.svg)](https://doi.org/10.5281/zenodo.8102448)
 
 Additional examples are provided with sample datasets in [this tutorial](TUTORIAL_utils.md).
+
+## Citation
+This work has been published in [Database](https://academic.oup.com/database/article/doi/10.1093/database/baad069/7342407?searchresult=1) (https://doi.org/10.1093/database/baad069)
